@@ -1,0 +1,23 @@
+body {
+    margin: 0; /* Remove default body margin */
+    padding: 0;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .column h3 {
+    font-size: 28px; /* Increase font size */
+    padding: 10px; /* Add padding for more height */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center the title text */
+    width: 100%; /* Make it full width of the column */
+    background-color: #f0f0f0; /* Optional background color for the title area */
+    border-radius: 0px; /* Optional rounded corners */
+    margin-top: 10px;
+  }
