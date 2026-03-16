@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding-top: 60px;
+  font-family: Arial, sans-serif;
+
+  /* SCROLL */
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+  .main-container {
+  display: flex;
+  flex-direction: row; /* Row on desktop */
+  min-height: calc(100vh - 60px);
+  width: 100%;
+}
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+  margin: 200px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.auth-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.auth-container button {
+  background-color: #23356e;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.auth-container button:hover {
+    background-color: #007bff;    /* Add hover effect */
+}
+.no-account-text {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.register-button {
+  background: none;
+  border: none;
+  color: #bf1733;
+  cursor: pointer;
+  /* font-weight: bold; */
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.register-button:hover {
+  color: #7b7676;
+}

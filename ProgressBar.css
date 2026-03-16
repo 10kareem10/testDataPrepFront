@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding-top: 60px;
+  font-family: Arial, sans-serif;
+
+  /* SCROLL */
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+  .main-container {
+  display: flex;
+  flex-direction: row; /* Row on desktop */
+  min-height: calc(100vh - 60px);
+  width: 100%;
+}
+/* Progress bar container */
+.progress-bar-container {
+    width: 100%;
+    background-color: #e0e0e0; /* Light grey background */
+    border-radius: 25px;
+    margin: 10px 0;
+    height: 20px; /* Height of the progress bar */
+}
+
+/* Actual progress */
+.progress-bar {
+    height: 100%;
+    width: 0%; /* Dynamic width set by progress value */
+    background-color: #4CAF50; /* Green progress bar */
+    border-radius: 25px;
+    transition: width 0.5s ease-in-out; /* Smooth transition */
+}

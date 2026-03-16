@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding-top: 60px;
+  font-family: Arial, sans-serif;
+
+  /* SCROLL */
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+  .main-container {
+  display: flex;
+  flex-direction: row; /* Row on desktop */
+  min-height: calc(100vh - 60px);
+  width: 100%;
+}
+
+/* Generic submit button (replaces submit-button1/2/3) */
+.submit-button {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 10px 12px;
+    background-color: #23356e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.submit-button:hover {
+    background-color: #007bff;
+    transform: scale(1.03);
+}
+
+/* Minimal changes for image layout */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.fixed-image {
+    max-width: 70%;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+/* Card container remains mostly unchanged */
+.card-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: transparent;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+}
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    .input-row input {
+        min-width: 100%;
+    }
+    .submit-button {
+        width: 80%;
+    }
+}

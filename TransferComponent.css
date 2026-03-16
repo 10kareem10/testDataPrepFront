@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Qwitcher+Grypen:wght@400;700&display=swap');
+body {
+  margin: 0;
+  padding-top: 60px;
+  font-family: Arial, sans-serif;
+
+  /* SCROLL */
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: transparent; /* Ensure body has no white background */
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;          
+  flex-direction: column;   
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  background-color: transparent; /* Remove background from main container */
+}
+.onboarding-container {
+    display: flex;               /* Enable flexbox layout */
+    flex-direction: column;      /* Stack elements vertically */
+    justify-content: center;     /* Center elements vertically */
+    align-items: center;         /* Center elements horizontally */
+    height: 100vh;               /* Full viewport height for vertical centering */
+    text-align: center;          /* Align text in the center */
+    padding: 0px;               /* Add some padding to avoid edges */
+    background-color: #ffffff;   /* Optional background color */
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.onboarding-title {
+    margin-bottom: 30px;
+    color: #23356e;
+}
+
+
+
+.onboarding-form {
+    background-color: white;     /* Card background */
+    padding: 30px;               /* Add padding to the card */
+    border-radius: 10px;         /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0.3, 0, 0, 0.5);  /* Soft shadow for card effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;                   /* Space between form fields */
+    width: 100%;
+    max-width: 600px;            /* Limit the max-width of the card */
+    margin-bottom: 50px;
+
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;  /* Space between the two inputs */
+}
+
+.onboarding-form input {
+    padding: 10px;
+    width: 100%;                 /* Ensure inputs take full width */
+    max-width: 300px;            /* Optional: set a max-width for inputs */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Ensure each input takes 48% of the row to fit two on one row */
+.input-row input {
+    flex: 1;
+    min-width: 40%;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color:#23356e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 50%;                 /* Full width button */
+    max-width: 300px;            /* Optional: set a max-width for the button */
+}
+
+.submit-button:hover {
+    background-color: #007bff;    /* Add hover effect */
+}
+
+.loading-section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader1 {
+    border: 5px solid #f3f3f3;    /* Light grey */
+    border-top: 5px solid #23356e; /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-text1 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+}
+
+.buttons-class1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 50%;
+  }

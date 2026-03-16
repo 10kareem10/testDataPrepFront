@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding-top: 60px;
+  font-family: Arial, sans-serif;
+
+  /* SCROLL */
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+  .main-container {
+  display: flex;
+  flex-direction: row; /* Row on desktop */
+  min-height: calc(100vh - 60px);
+  width: 100%;
+}
+.navbar {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between logo and title */
+  background-color: transparent; /* Removed white background */
+    padding: 5px ; /* Padding around navbar */
+    color: rgb(20, 20, 20); /* Text color */
+    width: 100%; /* Full width */
+    position: fixed; /* Fixes the navbar at the top */
+    top: 0; /* Position it at the top of the screen */
+    left: 0; /* Align to the left */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.logo {
+    height: 50px; /* Adjust logo height */
+    margin-left: 40px;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+ 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Qwitcher+Grypen:wght@400;700&display=swap');
+.navbar-title {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 26px;
+    font-weight: 400;
+    font-style: normal;
+    color: #007bff;
+  margin-right: 80px;
+}
+
+/* Responsive adjustments for smaller devices */
+@media (max-width: 768px) {
+    .logo {
+        margin-left: 10px;  /* reduce left margin */
+        height: 40px;        /* smaller logo */
+    }
+
+    .navbar-title {
+        font-size: 20px;     /* reduce font size */
+        margin-right: 10px;  /* reduce right margin */
+        text-align: center;  /* center title if needed */
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;  /* stack logo and title */
+        align-items: center;
+        padding: 5px 8px;
+    }
+
+    .logo {
+        margin: 5px 0;
+        height: 35px;            /* smaller logo */
+    }
+
+    .navbar-title {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+}
